@@ -94,8 +94,8 @@ Here's the updated table with the additional `labelColor` and `compact` properti
 | bgColor          | string               | No       | Background color of the input.                    |
 | outlineColor     | string               | No       | Outline color of the input when in outlined mode. |
 | style            | ViewStyle            | No       | Style for the input container.                    |
-| contentStyle     | ViewStyle            | No       | Style for the content inside the input container. |
-| outlineStyle     | ViewStyle            | No       | Style for the outline of the input.               |
+| contentStyle     | StyleProp<TextStyle> | No       | Style for the content inside the input container. |
+| outlineStyle     | StyleProp<ViewStyle> | No       | Style for the outline of the input.               |
 | onLeftIconPress  | function             | No       | Callback function for pressing the left icon.     |
 | onRightIconPress | function             | No       | Callback function for pressing the right icon.    |
 | leftIcon         | string               | No       | Icon to display on the left side of the input.    |

@@ -12,8 +12,8 @@ type Props = {
     bgColor?: string
     outlineColor?: string
     style?: ViewStyle
-    contentStyle?: ViewStyle
-    outlineStyle?: ViewStyle
+    contentStyle?: StyleProp<TextStyle>
+    outlineStyle?: StyleProp<ViewStyle>
     onLeftIconPress?: () => void
     onRightIconPress?: () => void
     leftIcon?: string

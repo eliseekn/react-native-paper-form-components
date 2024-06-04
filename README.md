@@ -62,22 +62,26 @@ import {Select, Button, Input, Checkbox, RadioButton} from 'react-native-paper-f
 | disabled               | boolean              | No       | Indicates if the component is disabled.                      |
 
 ### Button
-| Property       | Type                 | Required | Description                                        |
-|----------------|----------------------|----------|----------------------------------------------------|
-| label          | string               | Yes      | The label text for the button.                     |
-| onPress        | function             | Yes      | Callback function to handle button press events.   |
-| icon           | string               | No       | Icon to display in the button.                     |
-| style          | ViewStyle            | No       | Style for the button container.                    |
-| labelStyle     | StyleProp<TextStyle> | No       | Style for the button label text.                   |
-| bgColor        | string               | Yes      | Background color of the button.                    |
-| height         | number               | No       | Height of the button.                              |
-| mode           | ButtonMode           | No       | Mode of the button (contained, outlined, text).    |
-| iconColor      | string               | No       | Color of the button icon.                          |
-| iconSize       | number               | No       | Size of the button icon.                           |
-| iconPosition   | 'left' \| 'right'    | No       | Position of the button icon.                       |
-| rounded        | number               | No       | Border radius of the button.                       |
-| uppercase      | boolean              | No       | Indicates if the button label should be uppercase. |
-| disabled       | boolean              | No       | Indicates if the button is disabled.               |
+Here's the updated table with the additional `labelColor` and `compact` properties:
+
+| Property     | Type                      | Required | Description                                        |
+|--------------|---------------------------|----------|----------------------------------------------------|
+| label        | string \| React.ReactNode | Yes      | The label text or component for the button.        |
+| onPress      | () => void                | Yes      | Callback function to handle button press events.   |
+| icon         | string                    | No       | Icon to display in the button.                     |
+| style        | ViewStyle                 | No       | Style for the button container.                    |
+| labelStyle   | StyleProp<TextStyle>      | No       | Style for the button label text.                   |
+| bgColor      | string                    | Yes      | Background color of the button.                    |
+| labelColor   | string                    | Yes      | Color of the button label text.                    |
+| height       | number                    | No       | Height of the button.                              |
+| mode         | ButtonMode                | No       | Mode of the button (contained, outlined, text).    |
+| iconColor    | string                    | No       | Color of the button icon.                          |
+| iconSize     | number                    | No       | Size of the button icon.                           |
+| iconPosition | 'left' \| 'right'         | No       | Position of the button icon.                       |
+| rounded      | number                    | No       | Border radius of the button.                       |
+| uppercase    | boolean                   | No       | Indicates if the button label should be uppercase. |
+| disabled     | boolean                   | No       | Indicates if the button is disabled.               |
+| compact      | boolean                   | No       | Indicates if the button should be compact.         |
 
 ### Input
 | Property         | Type                 | Required | Description                                       |

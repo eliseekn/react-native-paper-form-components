@@ -89,22 +89,24 @@ Here's the updated table with the additional `labelColor` and `compact` properti
 | label            | string               | Yes      | The label text for the input.                     |
 | value            | string               | Yes      | The current value of the input.                   |
 | placeholder      | string               | No       | Placeholder text for the input.                   |
-| onChangeText     | function             | Yes      | Callback function to handle text changes.         |
+| onChangeText     | (value: any) => void | Yes      | Callback function to handle text changes.         |
 | type             | InputType            | Yes      | Type of the input.                                |
 | bgColor          | string               | No       | Background color of the input.                    |
 | outlineColor     | string               | No       | Outline color of the input when in outlined mode. |
 | style            | ViewStyle            | No       | Style for the input container.                    |
 | contentStyle     | StyleProp<TextStyle> | No       | Style for the content inside the input container. |
 | outlineStyle     | StyleProp<ViewStyle> | No       | Style for the outline of the input.               |
-| onLeftIconPress  | function             | No       | Callback function for pressing the left icon.     |
-| onRightIconPress | function             | No       | Callback function for pressing the right icon.    |
+| onLeftIconPress  | () => void           | No       | Callback function for pressing the left icon.     |
+| onRightIconPress | () => void           | No       | Callback function for pressing the right icon.    |
 | leftIcon         | string               | No       | Icon to display on the left side of the input.    |
 | rightIcon        | string               | No       | Icon to display on the right side of the input.   |
+| iconColor        | string               | No       | Color of the input icon.                          |
+| iconSize         | number               | No       | Size of the input icon.                           |
 | labelStyle       | StyleProp<TextStyle> | No       | Style for the input label.                        |
 | rounded          | number               | No       | Border radius of the input.                       |
 | height           | number               | No       | Height of the input.                              |
 | mode             | 'flat' \| 'outlined' | No       | Mode of the input (flat or outlined).             |
-| disabled         | boolean              | No       | Indicates if the input  is disabled.              |
+| disabled         | boolean              | No       | Indicates if the input is disabled.               |
 
 ### Checkbox
 | Property       | Type                 | Required | Description                                                |

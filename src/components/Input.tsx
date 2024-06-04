@@ -18,6 +18,8 @@ type Props = {
     onRightIconPress?: () => void
     leftIcon?: string
     rightIcon?: string
+    iconColor?: string
+    iconSize?: number
     labelStyle?: StyleProp<TextStyle>
     rounded?: number
     height?: number
@@ -40,6 +42,8 @@ const Input: React.FC<Props> = (
         labelStyle = undefined,
         leftIcon = undefined,
         rightIcon = undefined,
+        iconColor = undefined,
+        iconSize = undefined,
         onRightIconPress = undefined,
         onLeftIconPress = undefined,
         rounded = undefined,
@@ -61,8 +65,8 @@ const Input: React.FC<Props> = (
                     contentStyle={contentStyle}
                     outlineStyle={[{borderRadius: rounded}, outlineStyle]}
                     outlineColor={outlineColor}
-                    left={leftIcon && <TextInput.Icon icon={leftIcon} onPress={onLeftIconPress} />}
-                    right={rightIcon && <TextInput.Icon icon={rightIcon} onPress={onRightIconPress} />}
+                    left={leftIcon && <TextInput.Icon icon={leftIcon} color={iconColor} size={iconSize} onPress={onLeftIconPress} />}
+                    right={rightIcon && <TextInput.Icon icon={rightIcon} color={iconColor} size={iconSize} onPress={onRightIconPress} />}
                     disabled={disabled}
                 />
             )
@@ -81,8 +85,8 @@ const Input: React.FC<Props> = (
                     outlineStyle={[{borderRadius: rounded}, outlineStyle]}
                     outlineColor={outlineColor}
                     keyboardType="number-pad"
-                    left={leftIcon && <TextInput.Icon icon={leftIcon} onPress={onLeftIconPress} />}
-                    right={rightIcon && <TextInput.Icon icon={rightIcon} onPress={onRightIconPress} />}
+                    left={leftIcon && <TextInput.Icon icon={leftIcon} color={iconColor} size={iconSize} onPress={onLeftIconPress} />}
+                    right={rightIcon && <TextInput.Icon icon={rightIcon} color={iconColor} size={iconSize} onPress={onRightIconPress} />}
                     disabled={disabled}
                 />
             )
@@ -101,8 +105,8 @@ const Input: React.FC<Props> = (
                     outlineStyle={[{borderRadius: rounded}, outlineStyle]}
                     outlineColor={outlineColor}
                     keyboardType="email-address"
-                    left={leftIcon && <TextInput.Icon icon={leftIcon} onPress={onLeftIconPress} />}
-                    right={rightIcon && <TextInput.Icon icon={rightIcon} onPress={onRightIconPress} />}
+                    left={leftIcon && <TextInput.Icon icon={leftIcon} color={iconColor} size={iconSize} onPress={onLeftIconPress} />}
+                    right={rightIcon && <TextInput.Icon icon={rightIcon} color={iconColor} size={iconSize} onPress={onRightIconPress} />}
                     disabled={disabled}
                 />
             )
@@ -137,8 +141,8 @@ const Input: React.FC<Props> = (
                 outlineStyle={[{borderRadius: rounded}, outlineStyle]}
                 outlineColor={outlineColor}
                 secureTextEntry={true}
-                left={leftIcon && <TextInput.Icon icon={leftIcon} onPress={onLeftIconPress} />}
-                right={rightIcon && <TextInput.Icon icon={rightIcon} onPress={onRightIconPress} />}
+                left={leftIcon && <TextInput.Icon icon={leftIcon} color={iconColor} size={iconSize} onPress={onLeftIconPress} />}
+                right={rightIcon && <TextInput.Icon icon={rightIcon} color={iconColor} size={iconSize} onPress={onRightIconPress} />}
                 disabled={disabled}
             />
         )

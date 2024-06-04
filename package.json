@@ -1,6 +1,6 @@
 {
   "name": "react-native-paper-form-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of highly customizable form components for React Native Paper",
   "main": "./src/index.ts",
   "scripts": {

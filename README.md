@@ -104,7 +104,7 @@ Here's the updated table with the additional `labelColor` and `compact` properti
 | rounded          | number               | No       | Border radius of the input.                       |
 | height           | number               | No       | Height of the input.                              |
 | mode             | 'flat' \| 'outlined' | No       | Mode of the input (flat or outlined).             |
-| disabled         | boolean              | No       | Indicates if the inputff  is disabled.            |
+| disabled         | boolean              | No       | Indicates if the input  is disabled.              |
 
 ### Checkbox
 | Property       | Type                 | Required | Description                                                |
